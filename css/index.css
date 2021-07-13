@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: salmon;
+    display: grid;
+    grid-template-columns: 10% 30% 55%;
+    align-items: center;
+    justify-items: right;
+}
+.icons img{
+    width: 20px;
+}
+li{
+    display: inline-table;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+    font-weight: 400;
+}
+.logo img{
+    width: 90px;
+}
+.menu-img{
+    display: none;       
+}
+.menu-imgage{
+    display: none;
+}
+/* header done  */
+/* baner section  */
+.banner{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    margin-top: 50px;
+    justify-items: center;
+    height: 50vh;
+}
+.tbanner {
+    text-align: center;
+    align-self: center;
+    /* justify-content: space-evenly; */
+}
+.tbanner h1{
+    text-shadow: 0 8px 5px grey;
+    font-size: 50px;
+}
+.tbanner h4 {
+    font-style: italic;
+    line-height: .10px;
+}
+
+/* baner section done */
+/* contect  */
+.content{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+.card{
+    height: 80vh;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 grey;
+    padding: 0 0 80px 0;
+    margin: 40px 10px 10px 40px;
+    transition: transform 0.5s;
+}
+.card:hover{
+    border: 3px solid goldenrod;
+    box-shadow: 0 20px 10px 6px goldenrod;
+    transform: translateY(-30px);
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+}
+.top-left{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: red;
+}
+.title-box:hover{
+    box-shadow: 0 0 20px 0 crimson;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.title-hover:hover + .title-display{
+    display: block;
+}
+.title-display{
+    display: none;
+}
+/* contect done */
+/* pre-brand section  */
+.pre-brand{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    /* background-color: ; */
+}
+.pre-box{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    background: teal;
+    width: 300px;
+    height: 50vh;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.pre-box-text{
+    font-style: arial;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+}
+.pre-box-img img{
+    width: 180px;
+    border-radius: 800px;
+    height: 180px;
+    margin-top: 10px;
+}
+/* pre-brand section done */
+/* brands section  */
+.brand{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    align-items: center;
+    justify-items: center;
+    margin: 70px;
+}
+/* .brand-img{
+    width: 150px;
+    background-color: teal;
+    height: 10vh;
+} */
+.brand-img img{
+    box-shadow: 0 20px 10px grey;
+    width: 100%;
+}
+.brand-img img:hover{
+    box-shadow:  0 5px 20px 5px goldenrod;
+}
+/* brands section done */
+.main-footer{
+    background: black;
+    height: 47vh;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 20% 25% 25% 25%;
+    align-items: center;
+    justify-items: center;
+}
+.footer li{
+    display: block;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.ftext{
+    color: #fff;
+}
+.main-footer p{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.footerp{
+    margin-bottom: 30px;
+}
+/* footer section done */
+
+
+
+/* webpage responsiveness on all form factors, sm, md, lg  */
+/* styling sm to ensure mobile first  */
+@media (max-width: 500px){
+    /*  header */
+    .header{
+        background-color: teal;
+        display: grid;
+        grid-template-columns: 20% 45% 30%;
+        align-items: center;
+        justify-items: right;
+    }
+    .icons img{
+        width: 20px;
+    }
+    .navbar ul{
+        overflow: hidden;
+        top: 60px;
+        position: absolute;
+        background: black;
+        width: 100%;
+        left: 0;
+        text-align: right;
+        transition: 0.5s;
+    }
+    .navbar a{
+        color: tomato;
+    }
+    .navbar li{
+        display: block;
+        margin: 2px;
+    }
+    .menu-img{
+        display: block;
+        width: 25%;
+        cursor: pointer;
+        margin-left: 70px;
+    }
+    li{
+        display: inline-table;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        margin-left: 20px;
+        font-weight: 400;
+    }
+    .logo img{
+        width: 90px;
+    }
+   
+    /*  header done */
+    /* baner section  */
+    .banner{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        justify-items: center;
+        height: 50vh;
+    }
+    .tbanner {
+        margin-bottom: 20px;
+        text-align: center;
+        align-self: center;
+    }
+    .tbanner h1{
+        text-shadow: 0 8px 5px grey;
+        font-size: 50px;
+    }
+    .tbanner h4 {
+        font-style: italic;
+        line-height: .10px;
+    }
+
+    .ibanner2{
+        display: none;
+    }
+    /* baner section done */
+    /* contect  */
+    .content{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+    .card{
+        justify-items: center;
+        height: 80vh;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 grey;
+        padding: 0 0 80px 0;
+        margin: 40px 10px 10px 40px;
+        transition: transform 0.5s;
+    }
+    .card:hover{
+        border: 3px solid goldenrod;
+        box-shadow: 0 20px 10px 6px goldenrod;
+        transform: translateY(-30px);
+    }
+    .card-img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .card-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .top-left{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: red;
+    }
+    .title-box:hover{
+        box-shadow: 0 0 20px 0 crimson;
+        border-radius: 10px;
+        padding: 0 20px;
+    }
+    .title-hover:hover + .title-display{
+        display: block;
+    }
+    .title-display{
+        display: none;
+    }
+/* contect done */
+/* pre-brand section  */
+.pre-brand{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    /* background-color: ; */
+}
+.pre-box{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    background: teal;
+    width: 300px;
+    height: 50vh;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.pre-box-text{
+    font-style: arial;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+}
+.pre-box-img img{
+    width: 180px;
+    border-radius: 800px;
+    height: 180px;
+    margin-top: 10px;
+}
+/* pre-brand section done */
+/* brands section  */
+.brand{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    align-items: center;
+    justify-items: center;
+    margin: 70px;
+}
+.brand-img{
+    width: 140px;
+    padding: 0 40px;
+}
+.brand-img img{
+    box-shadow: 0 20px 10px grey;
+    /* width: 100%; */
+    width: 100%;
+}
+.brand-img img:hover{
+    box-shadow:  0 5px 20px 5px goldenrod;
+}
+/* brands section done */
+.main-footer{
+    background: rgb(70, 13, 70);
+    height: 47vh;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 20% 25% 25% 25%;
+    align-items: center;
+    justify-items: center;
+}
+.footer li{
+    display: block;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.ftext{
+    color: #fff;
+}
+.main-footer p{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.footerp{
+    margin-bottom: 30px;
+}
+/* footer section done */
+}
+/* styling sm to ensure mobile first done  */
+/* styling about page content section */
+.abt-content{
+    margin: 30px 0;
+}
+.abt-content h1{
+    text-align: center;
+    color: coral;
+    font-weight: 800;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.abt-img{
+    width: 50%;
+    height: 25vh;
+    background: salmon;
+    border-radius: 100%;
+}
+.abt-box,
+.abt-box2{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 30vh;
+    margin: 50px 30px;
+    align-items: center;
+}
+.abt-box2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/images/lemon.jpg);
+    height: 50vh;
+}
+.abt{
+    width: 100%;
+}
+#abt{
+    padding-left: 100px;
+}
+.abt-content p{
+    color: salmon;
+    margin: 20px 50px;
+}
+/* sm screen  */
+@media (max-width:500px){
+    .menu-image{
+        display: block;
+        width: 40px;
+        margin-right: 2px;
+    }
+    .drop{
+        display: none;
+        position: absolute;
+        background: teal;
+        text-align: center;
+        /* width: 100%; */
+        margin: 2px 20px 0 0 0;
+    }
+    .drop li{
+        padding-right: 50px;
+    }
+    .drop a{
+        display: block;
+        font-size: 20px;
+        padding: 10px 150px 5px 0;
+    }
+    .dropnavbar:hover .drop{
+        display: block;
+    }
+    .abt-content{
+        margin: 30px 0;
+    }
+    .abt-img{
+        width: 50%;
+        height: 25vh;
+        background: salmon;
+        border-radius: 100%;
+    }
+    .abt-box,
+    .abt-box2{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        height: 30vh;
+        margin: 120px 30px;
+        align-items: center;
+    }
+    .abt-box2{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/images/lemon.jpg);
+        height: 50vh;
+    }
+    .abt{
+        width: 100%;
+    }
+    #abt{
+        padding-left: 100px;
+    }
+    .abt-content p{
+        color: salmon;
+        margin: 20px 50px;
+    }
+}
+/* sm screen done */
+/* styling about page done */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
